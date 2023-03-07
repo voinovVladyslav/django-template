@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+    backend:
+        build: .
+        image: replace_with_your_image_name
+        volumes:
+            - .:/app
+        ports:
+            - "8000:8000"
+        env_file: .env
+        environment:
+            - POSTGRES_HOST=db
+        # command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+        command: sh -c "django-admin startproject project_name ."
+        depends_on:
+            - db
+
+    db:
+        image: postgres:14-alpine
+        env_file: .env
+        ports:
+            - "5432:5432"
+        volumes:
+            - postgres-data:/var/lib/postgresql/data
+
+volumes:
+    postgres-data:

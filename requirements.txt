@@ -1,0 +1,4 @@
+django>=4.1,<=4.2
+django-environ==0.4.5
+django-admin-autocomplete-filter==0.7.1
+psycopg2>=2.9.3,<2.10
