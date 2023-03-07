@@ -4,22 +4,11 @@ Starting django template with logging, custom user model, docker and postgres
 
 ## How to use
 
-### Replace all replace_some_text with your values.
-
-### Here is checklist to ensure that you replace all values
-
-| File               | Value      |
-| ------------------ | ---------- |
-| .env.example       | SECRET_KEY |
-| docker-compose.yml | image      |
-|                    |            |
-|                    |            |
-|                    |            |
-|                    |            |
-|                    |            |
-|                    |            |
-
 ### Create .env file using
+
+```
+cp .env.example .env
+```
 
 ## How to add dependencies
 

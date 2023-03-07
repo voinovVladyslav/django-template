@@ -3,7 +3,7 @@ version: "3.9"
 services:
     backend:
         build: .
-        image: replace_with_your_image_name
+        image: project_name_backend
         volumes:
             - .:/app
         ports:
